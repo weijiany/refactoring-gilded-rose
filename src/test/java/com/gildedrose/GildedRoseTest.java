@@ -9,19 +9,19 @@ public class GildedRoseTest {
 
     private static Object[][] testData() {
         return new Object[][] {
-            {new Item("foo", 1, 5), "foo", 0, 4},
-            {new Item("+5 Dexterity Vest", 10, 20), "+5 Dexterity Vest", 9, 19},
-            {new Item("+5 Dexterity Vest", -1, 20), "+5 Dexterity Vest", -2, 18},
-            {new Item("Aged Brie", 2, 0), "Aged Brie", 1, 1},
-            {new Item("Aged Brie", -1, 0), "Aged Brie", -2, 2},
-            {new Item("Elixir of the Mongoose", 5, 7), "Elixir of the Mongoose", 4, 6},
-            {new Item("Sulfuras, Hand of Ragnaros", 0, 80), "Sulfuras, Hand of Ragnaros", 0, 80},
-            {new Item("Sulfuras, Hand of Ragnaros", -1, 80), "Sulfuras, Hand of Ragnaros", -1, 80},
-            {new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20), "Backstage passes to a TAFKAL80ETC concert", 14, 21},
-            {new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49), "Backstage passes to a TAFKAL80ETC concert", 9, 50},
-            {new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49), "Backstage passes to a TAFKAL80ETC concert", 4, 50},
-            {new Item("Backstage passes to a TAFKAL80ETC concert", 1, 20), "Backstage passes to a TAFKAL80ETC concert", 0, 23},
-            {new Item("Backstage passes to a TAFKAL80ETC concert", -1, 20), "Backstage passes to a TAFKAL80ETC concert", -2, 0},
+            {Item.createItem("foo", 1, 5), "foo", 0, 4},
+            {Item.createItem("+5 Dexterity Vest", 10, 20), "+5 Dexterity Vest", 9, 19},
+            {Item.createItem("+5 Dexterity Vest", -1, 20), "+5 Dexterity Vest", -2, 18},
+            {Item.createItem("Aged Brie", 2, 0), "Aged Brie", 1, 1},
+            {Item.createItem("Aged Brie", -1, 0), "Aged Brie", -2, 2},
+            {Item.createItem("Elixir of the Mongoose", 5, 7), "Elixir of the Mongoose", 4, 6},
+            {Item.createItem("Sulfuras, Hand of Ragnaros", 0, 80), "Sulfuras, Hand of Ragnaros", 0, 80},
+            {Item.createItem("Sulfuras, Hand of Ragnaros", -1, 80), "Sulfuras, Hand of Ragnaros", -1, 80},
+            {Item.createItem("Backstage passes to a TAFKAL80ETC concert", 15, 20), "Backstage passes to a TAFKAL80ETC concert", 14, 21},
+            {Item.createItem("Backstage passes to a TAFKAL80ETC concert", 10, 49), "Backstage passes to a TAFKAL80ETC concert", 9, 50},
+            {Item.createItem("Backstage passes to a TAFKAL80ETC concert", 5, 49), "Backstage passes to a TAFKAL80ETC concert", 4, 50},
+            {Item.createItem("Backstage passes to a TAFKAL80ETC concert", 1, 20), "Backstage passes to a TAFKAL80ETC concert", 0, 23},
+            {Item.createItem("Backstage passes to a TAFKAL80ETC concert", -1, 20), "Backstage passes to a TAFKAL80ETC concert", -2, 0},
         };
     }
 
