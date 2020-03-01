@@ -2,10 +2,12 @@ package com.gildedrose;
 
 public class Item {
 
+    private static final String AGED_BRIE = "Aged Brie";
+    private static final String BACKSTAGE = "Backstage passes to a TAFKAL80ETC concert";
+    private static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
+
     public String name;
-
     public int sell_in;
-
     public int quality;
 
     Item(String name, int sell_in, int quality) {
@@ -16,11 +18,11 @@ public class Item {
 
     public static Item createItem(String name, int sell_in, int quality) {
         switch (name) {
-            case "Aged Brie":
+            case AGED_BRIE:
                 return new AgedBrie(sell_in, quality);
-            case "Backstage passes to a TAFKAL80ETC concert":
+            case BACKSTAGE:
                 return new BackstagePasses(sell_in, quality);
-            case "Sulfuras, Hand of Ragnaros":
+            case SULFURAS:
                 return new Sulfuras(sell_in, quality);
             default:
                 return new Item(name, sell_in, quality);
