@@ -6,6 +6,6 @@ public class Sulfuras extends Item {
     }
 
     @Override
-    void doUpdate() {
+    public void doUpdate() {
     }
 }
